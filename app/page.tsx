@@ -55,10 +55,13 @@ function QueryDisplay() {
 
 export default function Home() {
   return (
-    <div className="flex flex-1 items-center justify-center p-6">
+    <div className="flex flex-1 items-center justify-center p-6 pb-12">
       <Suspense fallback={<div className="text-gray-500">Loading...</div>}>
         <QueryDisplay />
       </Suspense>
+      <span className="fixed bottom-3 right-4 text-[11px] text-gray-600 select-none">
+        Coverage Team
+      </span>
     </div>
   );
 }
