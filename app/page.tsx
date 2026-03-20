@@ -59,9 +59,11 @@ export default function Home() {
       <Suspense fallback={<div className="text-gray-500">Loading...</div>}>
         <QueryDisplay />
       </Suspense>
-      <span className="fixed bottom-3 right-4 text-[11px] text-gray-600 select-none">
+      <div className="fixed bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2 text-xs tracking-widest uppercase text-gray-500 select-none">
+        <span className="h-px w-8 bg-gray-700" />
         Coverage Team
-      </span>
+        <span className="h-px w-8 bg-gray-700" />
+      </div>
     </div>
   );
 }
